@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.global{
+  width: 100%;
+  background-color: black;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.centro{
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.calendar, .six, .five, .four, .three, .two, .one{
+  height: 87%;
+  width: calc(100%/8);
+  border-radius: 5px;
+  background-color: #111111;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease;
+  color:white;
+  font-size: 90px;
+  font-weight: bold;
+}
+.calendar:hover, .six:hover, .five:hover, .four:hover, .three:hover, .two:hover, .one:hover{
+  transform: scale(1.08);
+  color: wheat;
+}
